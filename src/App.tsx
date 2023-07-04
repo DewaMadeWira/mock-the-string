@@ -72,7 +72,7 @@ function App() {
             <div className={`bg-white-bg border-2 text-sm absolute p-1 ${isHover ? "opacity-100": " opacity-0 "} transition-all -translate-y-10`}>
               Copy to clipboard
             </div>
-              <img src="public/copy.svg"  onMouseEnter={()=>setIsHover(!isHover)} onMouseLeave={()=>{
+              <img src="/copy.svg"  onMouseEnter={()=>setIsHover(!isHover)} onMouseLeave={()=>{
                 setIsHover(!isHover)
               }} onClick={()=>{
                 navigator.clipboard.writeText(mockedText);
